@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* body styling through fornt-end mentor styling guide */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* main card body styling start from here */
+
+.card__body {
+  min-width: 300px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.card__img img {
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.card__heading__info h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.card__heading__info h4 {
+  font-size: 12px;
+  color: hsl(75, 94%, 57%);
+  text-align: center;
+}
+
+.card__motto {
+  margin: 20px 0 20px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.card__buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__buttons button {
+  display: block;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+.card__buttons button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
